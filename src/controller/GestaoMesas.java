@@ -16,12 +16,25 @@ ArrayList<Mesa> mesas;
 	}
 
 	public void addMesa(int lugar, boolean fumador){
+		int i=0;
 		
 		Mesa m = new Mesa(mesas.size(),lugar, fumador);
 		
 		mesas.add(m);
 		
-		System.out.println("Nº mesas: " + mesas.size() + "\n");
+		for(int i=0; i<mesas.size(); i++){
+			//System.out.println("Nº mesas: " + mesas.size() + "\n");
+			System.out.println("Mesa "+ mesas.get(i+1)+ ": "
+					+ "\n Lugares: "+ mesas.get(i).getLugares());
+			if(mesas.get(i).isFumador() == true){
+				System.out.println("Fumador: SIM");
+			}else{
+				System.out.println("Fumador: NAO");
+			}
+			
+		}
+		
+		
 		
 	}
 

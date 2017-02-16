@@ -48,7 +48,7 @@ public class Fmesas extends Scene{
 			@Override
 			public void handle(ActionEvent arg0) {
 				
-				gM.addMesa(Integer.getInteger(tf1.getText()), cb1.isSelected());
+				gM.addMesa(Integer.parseInt(tf1.getText()), cb1.isSelected());
 				
 			}
 		});
